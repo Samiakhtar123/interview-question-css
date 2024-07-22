@@ -1,0 +1,65 @@
+
+.animation {
+    width: 500px;
+    height: 100px;
+    background-color: coral;
+    animation-name: sami;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode:both; /* Keeps the final state after animation ends */
+}
+
+@keyframes sami{
+    0% { transform: translateX(0); }
+    25% { transform: translateX(100px); }
+    50% { transform: translateX(200px); }
+    75% { transform: translateX(100px); }
+    100% { transform: translateX(0px); }
+}
+
+.grid-container {
+    display: grid;
+    grid-column: start;
+    grid-template-columns: auto auto auto;
+    border: 1px solid #ccc;
+}
+.item {
+    padding: 10px;
+    border: 1px solid #ccc; 
+}
+.row-container {
+    display: grid;
+    grid-column: start;
+    grid-template-rows: auto auto auto;
+    border: 1px solid #ccc;
+}
+.items {
+    padding: 10px;
+    border: 1px solid #ccc; 
+}        
+  
+  .margin {
+    width: 300px;        
+    padding: 20px;       
+    border: 1px solid black;  
+    margin: 10px;  
+          
+  } 
+  .border {
+    width: 220px;        
+    padding: 20px;        
+    border: 10px solid rgb(180, 74, 74);  
+    margin: 10px;      
+ }
+  .padding {
+    width: 140px;        
+    padding: 20px;        
+    border: 10px solid rgb(142, 43, 157);  
+    margin: 10px;        
+  }
+  .contents {
+    width: 70px;       
+    padding: 20px;        
+    border: 10px solid rgb(93, 140, 33);  
+    margin: 10px;         
+  }
